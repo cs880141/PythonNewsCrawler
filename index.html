@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MyNewsCrawler</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+	<div class="jumbotron">
+		<h1>News Parser</h1>
+		<p>Get the title and time of Yahoo news</p> 
+	</div>
+	<div class="row">
+		<div class="col-sm-4">
+			<input id="input_URL" type="text"  class="form-control" placeholder="enter Yahoo news' URL"/>
+			<p class="info" id="title"></p>
+			<p class="info" id="time"></p>
+		</div>
+		<div class="col-sm-3">
+			<button id="button_submit" class="btn btn-primary">submit</button>
+		</div>
+		<div class="col-sm-3">
+			<h4>Histories</h4>
+			<table id="table_hist">
+			<tr>
+			</tr>
+			</table>
+		</div>
+		<div class="col-sm-2">
+			<input onclick="clearCookies();" type="button" class="btn btn-danger" value="Clear cookies" />
+		</div>	
+	</div>
+</div>	
+	
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="./javascripts/main.js"></script>
+</body>
+</html>
